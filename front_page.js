@@ -4,7 +4,14 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "https://w
 import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
 
 // Firebase configuration (Ensure this matches your Firebase project settings)
-import firebaseConfig from './config.js';
+const firebaseConfig = {
+    apiKey: "AIzaSyDgizZnII2p76CTtIIc4ClA7jnj3EHBoo8",
+    authDomain: "fake-trade.firebaseapp.com",
+    projectId: "fake-trade",
+    storageBucket: "fake-trade.firebasestorage.app",
+    messagingSenderId: "697354550610",
+    appId: "1:697354550610:web:2830f7c985e50bbd418e8b"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
