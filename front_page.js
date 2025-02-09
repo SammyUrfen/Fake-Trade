@@ -5,13 +5,15 @@ import { getFirestore, collection, getDocs, query, where } from "https://www.gst
 
 // Firebase configuration (Ensure this matches your Firebase project settings)
 const firebaseConfig = {
-    apiKey: "AIzaSyDgizZnII2p76CTtIIc4ClA7jnj3EHBoo8",
-    authDomain: "fake-trade.firebaseapp.com",
-    projectId: "fake-trade",
-    storageBucket: "fake-trade.firebasestorage.app",
-    messagingSenderId: "697354550610",
-    appId: "1:697354550610:web:2830f7c985e50bbd418e8b"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY, 
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
+  
+export default firebaseConfig;
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
