@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake trade</title>
+    <link rel="stylesheet" href="front_page.css">
+    <link rel="stylesheet" href="chart-styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="header-title">Fake Trade</div>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="header-right">
+            <button class="login-btn">
+                Login / SignUp
+            </button>
+            <img src="guest.png" alt="profile png" class="profile-img">
+            <div class="account-menu">
+                <button class="account-btn">Guest</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a class="logout-btn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-cont">
+        
+        <nav class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#">Watchlist</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <!-- Dashboard (Default Page) -->
+            <section id="dashboard" class="page active">
+                <h2>Dashboard</h2>
+        
+                <!-- Sensex Section -->
+                <div class="index-section">
+                    <h3>Sensex (BSE 30)</h3>
+                    <div class="stocks-carousel" id="sensex-stocks">
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">RELIANCE</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹2,500</span>
+                                <span class="change up">+1.5%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">TCS</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹3,800</span>
+                                <span class="change down">-0.8%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">INFY</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹1,600</span>
+                                <span class="change up">+2.1%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">HDFC</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹2,100</span>
+                                <span class="change up">+0.5%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Nifty 50 Section -->
+                <div class="index-section">
+                    <h3>Nifty 50</h3>
+                    <div class="stocks-carousel" id="nifty50-stocks">
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">RELIANCE</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹2,500</span>
+                                <span class="change up">+1.5%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">TCS</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹3,800</span>
+                                <span class="change down">-0.8%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">INFY</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹1,600</span>
+                                <span class="change up">+2.1%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">HDFC</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹2,100</span>
+                                <span class="change up">+0.5%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Nifty Next 50 Section -->
+                <div class="index-section">
+                    <h3>Nifty Next 50</h3>
+                    <div class="stocks-carousel" id="niftyNext50-stocks">
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">RELIANCE</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹2,500</span>
+                                <span class="change up">+1.5%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">TCS</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹3,800</span>
+                                <span class="change down">-0.8%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">INFY</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹1,600</span>
+                                <span class="change up">+2.1%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+        
+                        <div class="stock-card">
+                            <div class="stock-header">
+                                <span class="ticker">HDFC</span>
+                                <span class="exchange">NSE</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₹2,100</span>
+                                <span class="change up">+0.5%</span>
+                            </div>
+                            <div class="stock-mini-chart">
+                                <div class="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+           <!-- watchlist section -->
+            <section id="watchlist" class="page">
+                <h2>Watchlist</h2>
+                <div class="stock-list-container">
+                    <table class="stock-list-table">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>Last Price</th>
+                                <th>24h Change</th>
+                                <th>Market Cap</th>
+                                <th>Volume</th>
+                                <th>Chart</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="watchlist-body">
+                            <!-- Example stock item template for watchlist -->
+                            <tr class="watchlist-item" data-symbol="AAPL">
+                                <td class="stock-info">
+                                    <div class="stock-name">Apple Inc.</div>
+                                    <div class="stock-symbol">AAPL</div>
+                                </td>
+                                <td class="last-price">₹150.23</td>
+                                <td class="change-24h positive">+2.5%</td>
+                                <td class="market-cap">₹2.4T</td>
+                                <td class="volume">12.5M</td>
+                                <td class="mini-chart">
+                                    <canvas class="stock-mini-chart"></canvas>
+                                </td>
+                                <td class="actions">
+                                    <button class="remove-watchlist">Remove</button>
+                                    <button class="view-details">View</button>
+                                </td>
+                            </tr>
+                            <!-- Stocks will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- My Portfolio -->
+            <section id="myportfolio" class="page">
+                <h2>My Portfolio</h2>
+                <div class="portfolio-summary">
+                    <div class="summary-item">
+                        <span class="label">Total Value:</span>
+                        <span class="value">₹0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Today's P/L:</span>
+                        <span class="value profit">+₹0.00 (0.00%)</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Overall P/L:</span>
+                        <span class="value loss">-₹0.00 (0.00%)</span>
+                    </div>
+                </div>
+                <div class="stock-list-container">
+                    <table class="stock-list-table">
+                        <thead>
+                            <tr>
+                                <th>Stock</th>
+                                <th>Qty</th>
+                                <th>Avg. Cost</th>
+                                <th>Current Price</th>
+                                <th>P/L</th>
+                                <th>Chart</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="portfolio-body">
+                            <!-- Example stock item template for portfolio -->
+                            <tr class="portfolio-item" data-symbol="AAPL">
+                                <td class="stock-info">
+                                    <div class="stock-name">Apple Inc.</div>
+                                    <div class="stock-symbol">AAPL</div>
+                                </td>
+                                <td class="quantity">10</td>
+                                <td class="avg-cost">₹145.30</td>
+                                <td class="current-price">₹150.23</td>
+                                <td class="profit-loss positive">+₹49.30 (3.4%)</td>
+                                <td class="mini-chart">
+                                    <canvas class="stock-mini-chart"></canvas>
+                                </td>
+                                <td class="actions">
+                                    <button class="sell-stock">Sell</button>
+                                    <button class="view-details">View</button>
+                                </td>
+                            </tr>
+                            <!-- Portfolio stocks will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        
+            <!-- Settings -->
+            <section id="settings" class="page">
+                <h2>Settings</h2>
+                <p>Edit profile, view transaction history...</p>
+            </section>
+        
+            <!-- Help Section -->
+            <section id="help" class="page">
+                <h2>Help</h2>
+                <p>You'll get no help, I don't get paid for helping you right now. Just open a PR on github and I will check if it's important.</p>
+            </section>
+        </div>
+    
+        <!-- Stock Details Sidebar -->
+        <aside class="stock-details-sidebar">
+            <button class="close-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+            </button>
+            
+            <div class="sidebar-header">
+                <div class="stock-title">
+                    <h2>Stock Details</h2>
+                    <span class="exchange-tag">NSE</span>
+                </div>
+                <div class="current-price">
+                    <span class="price">₹0.00</span>
+                    <span class="change-percent">0.00%</span>
+                </div>
+            </div>
+
+            <div class="stock-detail-chart">
+                <div class="chart-container">
+                    <!-- Chart will be rendered here -->
+                </div>
+                <div class="chart-controls">
+                    <button class="time-button active" data-period="1D">1D</button>
+                    <button class="time-button" data-period="1W">1W</button>
+                    <button class="time-button" data-period="1M">1M</button>
+                    <button class="time-button" data-period="3M">3M</button>
+                    <button class="time-button" data-period="1Y">1Y</button>
+                    <button class="time-button" data-period="5Y">5Y</button>
+                </div>
+            </div>
+
+            <div class="stock-details-container">
+                <div class="details-scroll">
+                    <table class="stock-details-table">
+                        <tbody>
+                            <tr>
+                                <td>Market Cap</td>
+                                <td class="market-cap">₹0.00 Cr</td>
+                            </tr>
+                            <tr>
+                                <td>Day's Range</td>
+                                <td class="day-range">₹0.00 - ₹0.00</td>
+                            </tr>
+                            <tr>
+                                <td>52 Week Range</td>
+                                <td class="year-range">₹0.00 - ₹0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Volume</td>
+                                <td class="volume">0</td>
+                            </tr>
+                            <tr>
+                                <td>P/E Ratio</td>
+                                <td class="pe-ratio">0.00</td>
+                            </tr>
+                            <tr>
+                                <td>EPS</td>
+                                <td class="eps">₹0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Dividend Yield</td>
+                                <td class="dividend">0.00%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="trading-section">
+                <div class="trade-inputs">
+                    <div class="input-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" min="1" value="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="price">Amount (₹)</label>
+                        <input type="number" id="price" min="0" value="0">
+                    </div>
+                </div>
+                <button class="buy-button">Buy</button>
+            </div>
+        </aside>
+    </div>
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="front_page.js"></script>
+</html>
